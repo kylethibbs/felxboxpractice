@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf8">
+    <meta name ="viewport" contents = "width = device-width, initial-scale =1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        box-sizing: border-box;
+        }
+
+        html{
+            background-image: url("images/background.jpg");
+            background-attachment: fixed;
+        }
+
+        body {
+        margin: 0;
+        font-family: Arial;
+        }
+
+        header {
+        text-align: center;
+        padding: 32px;
+        background-color:   rgba(0, 128, 120, 1);
+        border-radius: 10px 100px 10px 100px;
+        border: 10px solid #E1AD01;
+        }
+
+        header h1{
+            color: #E1AD01;
+            font-family: cursive;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px black;
+            font-size: 500%;
+            margin-bottom:.3em;
+            
+        }
+
+        header p{
+            font-weight: bold;
+            font-size: 150%;
+        }
+
+        .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        }
+
+        .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        }
+
+        footer{
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Quinn XCII</h1>
+        <p>Change of Scenery II is comming out really cool</p>
+    
+    </header>
+
+    <main>
+        <!-- Photo Grid -->
+        <div class="row"> 
+            <div class="column">
+                <img src="images/quinn1.jpeg" >
+                <img src="images/quinn9.jpg" >
+                <img src="images/quinn13.jpg" >
+                <img src="images/quinn7.jpg" >
+                <img src="images/quinn21.jpg" >
+                <img src="images/quinn5.jpg" >
+                
+            </div>
+            <div class="column">
+                <img src="images/quinn2.png" >
+                <img src="images/quinn10.png" >
+                <img src="images/quinn14.jpg" >
+                <img src="images/quinn24.jpg" >
+                <img src="images/quinn22.jpg" >
+                <img src="images/quinn6.jpg" >
+                
+            </div>  
+            <div class="column">
+                <img src="images/quinn3.jpg" >
+                <img src="images/quinn11.jpg" >
+                <img src="images/quinn15.jpg" >
+                <img src="images/quinn19.jpg" >
+                <img src="images/quinn23.jpg" >
+                <img src="images/quinn20.jpg" >
+                
+            </div>
+            <div class="column">
+                <img src="images/quinn4.jpg" >
+                <img src="images/quinn12.png" >
+                <img src="images/quinn16.jpg" >
+                <img src="images/quinn17.jpeg" >
+                <img src="images/quinn8.jpg" >
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy 2021 Kyle Thibodeaux</p>
+    </footer>
+</body>
+</html>
